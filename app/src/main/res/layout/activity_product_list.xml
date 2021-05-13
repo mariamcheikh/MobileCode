@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".List.ProductActivity">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        android:hint="Search"
+        android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_weight="1"
+        android:divider="#FFF"
+        android:dividerHeight="20dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="229dp"
+        android:fadeScrollbars="false"
+        android:padding="15dp"
+        android:scrollX="0px"
+        android:scrollY="0px"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="20dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+</LinearLayout>
